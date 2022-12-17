@@ -1,0 +1,26 @@
+13:15:19 INFO  : Registering command handlers for Vitis TCF services
+13:15:20 INFO  : Successfully done query RDI_DATADIR 
+13:15:20 INFO  : Adding 'Z:/ZynqBerry/sw_lib' as a new local repository.
+13:15:21 INFO  : Platform repository initialization has completed.
+13:15:29 INFO  : Result from executing command 'getProjects': 
+13:15:29 INFO  : Result from executing command 'getPlatforms': 
+13:15:37 INFO  : Result from executing command 'getProjects': 
+13:15:37 INFO  : Result from executing command 'getPlatforms': 
+13:16:52 INFO  : Result from executing command 'getProjects': 
+13:16:52 INFO  : Result from executing command 'getPlatforms': 
+13:16:52 INFO  : plnx-install-location is set to ''
+13:16:53 ERROR : xsct server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read(Unknown Source)
+	at java.base/java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+13:17:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive Z:\ZynqBerry\workspace\sdk\temp_xsdb_launch_script.tcl
+13:17:04 INFO  : XSCT server has started successfully.
+13:17:04 INFO  : plnx-install-location is set to ''
+13:17:04 INFO  : Successfully done setting XSCT server connection channel  
+13:17:04 INFO  : Successfully done setting workspace for the tool. 

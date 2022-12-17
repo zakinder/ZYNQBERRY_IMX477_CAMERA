@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 17 12:18:42 2022
+# Process ID: 148528
+# Current directory: Z:/ZynqBerry/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --run 1 --gui 1 --clean 2 --boardpart LAST_ID
+# Log file: Z:/ZynqBerry/v_log/vivado.log
+# Journal file: Z:/ZynqBerry/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --run
+INFO:(TE) Parameter Option Value: 1
+INFO:(TE) Parameter Index: 2
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+INFO:(TE) Parameter Index: 4
+INFO:(TE) Parameter Option: --clean
+INFO:(TE) Parameter Option Value: 2
+INFO:(TE) Parameter Index: 6
+INFO:(TE) Parameter Option: --boardpart
+INFO:(TE) Parameter Option Value: LAST_ID
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project LAST_ID 1 1 2
+INFO: [TE_INIT-182] Source Z:/ZynqBerry/settings/design_settings.tcl.
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2020.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         CREATE_PROJECT_GM
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File Z:/ZynqBerry/board_files/TE0727_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+INFO: [TE_INIT-189] Software Definition CSV version passed
+INFO: [TE_INIT-191] Software Definition CSV Version analyze domain table header
+INFO: [TE_INIT-193] Software Definition CSV Version analyze bsp table header
+INFO: [TE_INIT-22] Read ZIP ignore list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+Found ID: 2
+Board part csv name check:  All names (2) are equal on position  0.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             2 
+  TE::PRODID:         TE0727-02-41C34 
+  TE::PARTNAME:       xc7z010clg225-1 
+  TE::BOARDPART:      trenz.biz:te0727_10_1c:part0:1.0 
+  TE::SHORTDIR:       10_512MB 
+  TE::ZYNQFLASHTYP:   qspi-x4-single 
+  TE::FPGAFLASHTYP:   s25fl128s-3.3v-qspi-x4-single 
+  TE::PCB_REV:        REV02 
+  TE::DDR_SIZE:       512MB 
+  TE::FLASH_SIZE:     16MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:           
+  ------
+Generate new project (Path: Z:/ZynqBerry/vivado).
+INFO: [TE_INIT-69] Set Board Definition path: Z:/ZynqBerry/board_files
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_carrier/1.2/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_carrier/1.3/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_som/1.2/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_som/1.3/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+INFO: [TE_INIT-70] Set IP path : Z:/ZynqBerry/ip_lib
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/ZynqBerry/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Start GUI...all other messages will be print inside the GUI TCL console of Vivado
+Start import design
+INFO: [TE_UTIL-8] Following xdc files were found: 
+   Z:/ZynqBerry/constraints/vivado_target.xdc 
+  ------
+Set processing order normal for Z:/ZynqBerry/constraints/vivado_target.xdc
+Set use for synthesis and implementation for Z:/ZynqBerry/constraints/vivado_target.xdc
+INFO: [TE_UTIL-2] Following block designs were found: 
+   Z:/ZynqBerry/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+INFO: [TE_UTIL-2] Following block designs were found: 
+   Z:/ZynqBerry/block_design/zusys_bd.tcl 
+  ------
+INFO: [BD::TCL 103-2003] Currently there is no design <design_1> in project, so creating one...
+Wrote  : <Z:\ZynqBerry\vivado\ZynqBerry.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1081.281 ; gain = 0.000
+INFO: [BD::TCL 103-2004] Making design <design_1> as current_bd_design.
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "design_1".
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:axi_vdma:6.3 xilinx.com:ip:processing_system7:5.5 xilinx.com:ip:smartconnect:1.0 xilinx.com:ip:xlconstant:1.1 xilinx.com:ip:axis_subset_converter:1.1 xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:v_demosaic:1.0 digilentinc.com:ip:rgb2dvi:1.4 xilinx.com:ip:v_axi4s_vid_out:4.0 xilinx.com:ip:v_tc:6.2  .
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1731] Type mismatch between connected pins: /system_rst_out(rst) and /phy/system_rst_out(undef)
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1731] Type mismatch between connected pins: /system_rst_out(rst) and /phy/system_rst_out(undef)
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1306] The connection to interface pin /op_path/rgb2dvi_0/vid_pVDE is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+WARNING: [BD 41-1306] The connection to interface pin /op_path/v_axi4s_vid_out_0/vid_active_video is being overridden by the user. This pin will not be connected as a part of interface connection vid_io_out
+WARNING: [BD 41-1306] The connection to interface pin /op_path/rgb2dvi_0/vid_pData is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+WARNING: [BD 41-1306] The connection to interface pin /op_path/v_axi4s_vid_out_0/vid_data is being overridden by the user. This pin will not be connected as a part of interface connection vid_io_out
+WARNING: [BD 41-1306] The connection to interface pin /op_path/rgb2dvi_0/vid_pHSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+WARNING: [BD 41-1306] The connection to interface pin /op_path/v_axi4s_vid_out_0/vid_hsync is being overridden by the user. This pin will not be connected as a part of interface connection vid_io_out
+WARNING: [BD 41-1306] The connection to interface pin /op_path/rgb2dvi_0/vid_pVSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+WARNING: [BD 41-1306] The connection to interface pin /op_path/v_axi4s_vid_out_0/vid_vsync is being overridden by the user. This pin will not be connected as a part of interface connection vid_io_out
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_clk_hs_n is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_clk_hs_p is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_clk_lp_n is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_clk_lp_p is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_data_hs_n is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_data_hs_p is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_data_lp_n is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+WARNING: [BD 41-1306] The connection to interface pin /mipi_ip/mipi_phy_if_0_data_lp_p is being overridden by the user. This pin will not be connected as a part of interface connection mipi_phy_if_0
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_vdma_0/Data_MM2S' at <0x0000_0000 [ 512M ]>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_vdma_0/Data_S2MM' at <0x0000_0000 [ 512M ]>.
+Slave segment '/axi_vdma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x8300_0000 [ 64K ]>.
+Slave segment '/mipi_ip/mipi_csi2_rx_subsyst_0/csirxss_s_axi/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 4K ]>.
+Slave segment '/mipi_ip/v_demosaic_0/s_axi_CTRL/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C1_0000 [ 64K ]>.
+Slave segment '/op_path/v_tc_0/ctrl/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x83C0_0000 [ 64K ]>.
+Wrote  : <Z:\ZynqBerry\vivado\ZynqBerry.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <design_1> may result in errors during validation.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from BD file <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /mipi_ip/rst_ps8_0_100M1/peripheral_aresetn (synchronous to clock source /mipi_ip/clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1489.707 ; gain = 50.926
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <Z:\ZynqBerry\vivado\ZynqBerry.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mipi_ip/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_ip/axis_subset_converter_1/m_axis_tdest'(10) - Only lower order bits will be connected.
+VHDL Output written to : Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/axis_subset_converter_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/clk_wiz_1 .
+Exporting to file z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/mipi_csi2_rx_subsyst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/rst_ps8_0_100M1 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_demosaic_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/v_demosaic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/axis_subset_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/rst_ps8_0_100M1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block op_path/xlconstant_0 .
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP1'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_ip/axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1675.488 ; gain = 185.781
+INFO: [TE_HW-34] Generate top level wrapper
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+open_bd_design {Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from BD file <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+open_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1712.555 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 12:20:44 2022...

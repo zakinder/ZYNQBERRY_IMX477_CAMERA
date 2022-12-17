@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 17 12:40:46 2022
+# Process ID: 65004
+# Current directory: Z:/ZynqBerry/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: Z:/ZynqBerry/v_log/vivado.log
+# Journal file: Z:/ZynqBerry/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv trenz.biz:user:axis_raw_demosaic:1.0 mipi_ip/axis_raw_demosaic_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv trenz.biz:user:axis_video_crop:1.0 mipi_ip/axis_video_crop_0
+endgroup
+delete_bd_objs [get_bd_intf_nets mipi_ip/axi_interconnect_0_M01_AXI] [get_bd_intf_nets mipi_ip/axis_subset_converter_1_M_AXIS] [get_bd_intf_nets mipi_ip/Conn5] [get_bd_cells mipi_ip/v_demosaic_0]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/m_axis_video] [get_bd_intf_pins mipi_ip/axis_video_crop_0/m_axis]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/M_AXIS] [get_bd_intf_pins mipi_ip/axis_video_crop_0/s_axis]
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/S_AXIS] [get_bd_intf_pins mipi_ip/axis_subset_converter_1/M_AXIS]
+connect_bd_net [get_bd_pins mipi_ip/axis_raw_demosaic_0/axis_aclk] [get_bd_pins mipi_ip/clk_wiz_1/clk_out2]
+connect_bd_net [get_bd_pins mipi_ip/axis_raw_demosaic_0/axis_aresetn] [get_bd_pins mipi_ip/rst_ps8_0_100M1/peripheral_aresetn]
+connect_bd_net [get_bd_pins mipi_ip/axis_video_crop_0/axis_aclk] [get_bd_pins mipi_ip/clk_wiz_1/clk_out2]
+save_bd_design
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+validate_bd_design
+delete_bd_objs [get_bd_intf_nets mipi_ip/axis_subset_converter_1_M_AXIS] [get_bd_intf_nets mipi_ip/Conn4] [get_bd_cells mipi_ip/axis_subset_converter_1]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/S_AXIS] [get_bd_intf_pins mipi_ip/mipi_csi2_rx_subsyst_0/video_out]
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+save_bd_design
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+write_bd_tcl -force Z:/ZynqBerry/block_design/zusys_bd.tcl
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]

@@ -1,0 +1,10 @@
+2022-12-17T14:08:46.959564100255-14:08:46 **** Incremental Build of configuration Debug for project MIPI ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+14:08:47 Build Finished (took 621ms)
+

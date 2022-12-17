@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 17 12:21:02 2022
+# Process ID: 171340
+# Current directory: Z:/ZynqBerry/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --run 2 --clean 2 --boardpart LAST_ID
+# Log file: Z:/ZynqBerry/v_log/vivado.log
+# Journal file: Z:/ZynqBerry/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace

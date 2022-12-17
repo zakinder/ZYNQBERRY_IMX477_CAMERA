@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="MIPI" location="Z:/ZynqBerry/workspace/sdk/MIPI" platform="Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/export/TE0727-02-41C34/TE0727-02-41C34.xpfm" platformUID="xilinx:te0727_10_1c::0.0(custom)" systemProject="MIPI_system" sysConfig="TE0727-02-41C34" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4ffcacae834520a8b4c57250ca65b396">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.346948507">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.452324561" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

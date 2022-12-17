@@ -1,0 +1,10 @@
+2022-12-17T14:08:47.862250500255-14:08:47 **** Incremental Build of configuration Debug for project MIPI_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 3921 Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/export/TE0727-02-41C34/TE0727-02-41C34.xpfm standalone_domain Z:/ZynqBerry/workspace/sdk/MIPI_system/Debug/system.bif
+000-sdcard_gen --xpfm Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/export/TE0727-02-41C34/TE0727-02-41C34.xpfm --sys_config TE0727-02-41C34 --bif Z:/ZynqBerry/workspace/sdk/MIPI_system/Debug/system.bif --bitstream Z:/ZynqBerry/workspace/sdk/MIPI/_ide/bitstream/design_1_wrapper.bit --elf Z:/ZynqBerry/workspace/sdk/MIPI/Debug/MIPI.elf,ps7_cortexa9_0
+000-creating BOOT.BIN using Z:/ZynqBerry/workspace/sdk/MIPI/_ide/bitstream/design_1_wrapper.bit
+000-Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image Z:/ZynqBerry/workspace/sdk/MIPI_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+14:08:54 Build Finished (took 6s.617ms)
+

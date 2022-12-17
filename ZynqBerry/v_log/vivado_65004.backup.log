@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 17 12:40:46 2022
+# Process ID: 65004
+# Current directory: Z:/ZynqBerry/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: Z:/ZynqBerry/v_log/vivado.log
+# Journal file: Z:/ZynqBerry/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-182] Source Z:/ZynqBerry/settings/design_settings.tcl.
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2020.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         OPEN_PROJECT_GM
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File Z:/ZynqBerry/board_files/TE0727_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+INFO: [TE_INIT-189] Software Definition CSV version passed
+INFO: [TE_INIT-191] Software Definition CSV Version analyze domain table header
+INFO: [TE_INIT-193] Software Definition CSV Version analyze bsp table header
+INFO: [TE_INIT-22] Read ZIP ignore list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+Open existing project (File: Z:/ZynqBerry/vivado/ZynqBerry.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: Z:/ZynqBerry/board_files
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_carrier/1.2/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_carrier/1.3/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_som/1.2/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2020.1/data/boards/board_files/kv260_som/1.3/board.xml. Board will be ignored.
+Resolution: Please contact your board vendor with this message.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/ZynqBerry/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found 'z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1073.750 ; gain = 0.000
+Board part csv name check:  All names (TE0727-02-41C34) are equal on position  1.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             2 
+  TE::PRODID:         TE0727-02-41C34 
+  TE::PARTNAME:       xc7z010clg225-1 
+  TE::BOARDPART:      trenz.biz:te0727_10_1c:part0:1.0 
+  TE::SHORTDIR:       10_512MB 
+  TE::ZYNQFLASHTYP:   qspi-x4-single 
+  TE::FPGAFLASHTYP:   s25fl128s-3.3v-qspi-x4-single 
+  TE::PCB_REV:        REV02 
+  TE::DDR_SIZE:       512MB 
+  TE::FLASH_SIZE:     16MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:           
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   Z:/ZynqBerry/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+WARNING: [TE_HW-23] Current top level name is set to design_1_wrapper, expect zusys_wrapper from default initialisation. Set TE::PR_TOPLEVELNAME to design_1_wrapper.
+INFO: [TE_HW-24] Restore project parameters:
+  TE::SIM_NAME:         sim_1  
+  TE::SYNTH_NAME:       synth_1  
+  TE::IMPL_NAME:        impl_1  
+  TE::CONST_NAME:       constrs_1  
+  ------
+Start GUI...all other messages will be print inside the GUI TCL console of Vivado
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+open_bd_design {Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from BD file <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1877.750 ; gain = 548.711
+startgroup
+create_bd_cell -type ip -vlnv trenz.biz:user:axis_raw_demosaic:1.0 mipi_ip/axis_raw_demosaic_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv trenz.biz:user:axis_video_crop:1.0 mipi_ip/axis_video_crop_0
+endgroup
+delete_bd_objs [get_bd_intf_nets mipi_ip/axi_interconnect_0_M01_AXI] [get_bd_intf_nets mipi_ip/axis_subset_converter_1_M_AXIS] [get_bd_intf_nets mipi_ip/Conn5] [get_bd_cells mipi_ip/v_demosaic_0]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/m_axis_video] [get_bd_intf_pins mipi_ip/axis_video_crop_0/m_axis]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/M_AXIS] [get_bd_intf_pins mipi_ip/axis_video_crop_0/s_axis]
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/S_AXIS] [get_bd_intf_pins mipi_ip/axis_subset_converter_1/M_AXIS]
+connect_bd_net [get_bd_pins mipi_ip/axis_raw_demosaic_0/axis_aclk] [get_bd_pins mipi_ip/clk_wiz_1/clk_out2]
+connect_bd_net [get_bd_pins mipi_ip/axis_raw_demosaic_0/axis_aresetn] [get_bd_pins mipi_ip/rst_ps8_0_100M1/peripheral_aresetn]
+connect_bd_net [get_bd_pins mipi_ip/axis_video_crop_0/axis_aclk] [get_bd_pins mipi_ip/clk_wiz_1/clk_out2]
+save_bd_design
+Wrote  : <Z:\ZynqBerry\vivado\ZynqBerry.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_fb1635e1.ui> 
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /op_path/v_tc_0/resetn (associated clock /op_path/v_tc_0/clk) is connected to reset source /mipi_ip/rst_ps8_0_100M1/peripheral_aresetn (synchronous to clock source /mipi_ip/clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Instead it should be connected to reset source /op_path/rst_ps8_0_100M1/peripheral_aresetn.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /mipi_ip/clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /op_path/clk_wiz_0 clk_wiz propagate
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /mipi_ip/axis_raw_demosaic_0/S_AXIS(2) and /mipi_ip/axis_subset_converter_1/M_AXIS(1)
+WARNING: [BD 41-927] Following properties on pin /mipi_ip/axis_video_crop_0/axis_aclk have been updated from connected ip, but BD cell '/mipi_ip/axis_video_crop_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </mipi_ip/axis_video_crop_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /op_path/rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/op_path/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </op_path/rgb2dvi_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:55 . Memory (MB): peak = 1877.750 ; gain = 0.000
+delete_bd_objs [get_bd_intf_nets mipi_ip/axis_subset_converter_1_M_AXIS] [get_bd_intf_nets mipi_ip/Conn4] [get_bd_cells mipi_ip/axis_subset_converter_1]
+connect_bd_intf_net [get_bd_intf_pins mipi_ip/axis_raw_demosaic_0/S_AXIS] [get_bd_intf_pins mipi_ip/mipi_csi2_rx_subsyst_0/video_out]
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+save_bd_design
+Wrote  : <Z:\ZynqBerry\vivado\ZynqBerry.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <Z:/ZynqBerry/vivado/ZynqBerry.srcs/sources_1/bd/design_1/ui/bd_fb1635e1.ui> 
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property on PARAM_VALUE.C_CAL_MODE is not allowed in procedure update_gui_for_PARAM_VALUE.DPY_LINE_RATE
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+write_bd_tcl -force Z:/ZynqBerry/block_design/zusys_bd.tcl
+INFO: [BD 5-148] Tcl file written out <Z:/ZynqBerry/block_design/zusys_bd.tcl>.
+
+WARNING: [BD 5-339] The block design <design_1> has not been validated, therefore, a block design created using this Tcl file
+<Z:/ZynqBerry/block_design/zusys_bd.tcl> may result in errors during validation.
+regenerate_bd_layout -hierarchy [get_bd_cells mipi_ip]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 12:50:30 2022...

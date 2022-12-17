@@ -1,0 +1,10 @@
+/* bare-metal */
+/*auto-generated on 2022/12/17 13:06:17 */
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+  [bootloader, destination_cpu=  ]../../../software/10_512MB/fsbl.elf
+  [destination_device = pl]../../../hardware/10_512MB/ZynqBerry_10_512MB.bit
+  [destination_cpu = ]../../../software/10_512MB/hello_te0727.elf
+  [offset =  {}]{}
+}

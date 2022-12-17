@@ -1,0 +1,12 @@
+/* linux */
+/*auto-generated on 2022/12/17 13:06:17 */
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+  [bootloader, destination_cpu=  ]../../../software/10_512MB/fsbl.elf
+  [pmufw_image]
+  [destination_device = pl]../../../hardware/10_512MB/ZynqBerry_10_512MB.bit
+  [destination_cpu = , exception_level = el-3, trustzone]
+  [destination_cpu = ]../../../os/petalinux/512MB/u-boot.elf
+  [offset =  {}]{}
+}

@@ -1,0 +1,9 @@
+/* linux */
+/*auto-generated on 2022/12/17 13:15:37 */
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+  [bootloader]<TE0727-02-41C34/boot/fsbl.elf>
+  <bitstream>
+  <TE0727-02-41C34/boot/u-boot.elf>
+}

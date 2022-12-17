@@ -1,0 +1,30 @@
+From 2c0274b748d69b0066af836f75aa5af2c685855e Mon Sep 17 00:00:00 2001
+From: "m.struecker" <struecker@PC02615.trenz.local>
+Date: Fri, 17 Sep 2021 13:19:45 +0200
+Subject: [PATCH] test
+
+---
+ drivers/mtd/spi-nor/spi-nor.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/drivers/mtd/spi-nor/spi-nor.c b/drivers/mtd/spi-nor/spi-nor.c
+index 408061aa194e..1c9bee19cb71 100644
+--- a/drivers/mtd/spi-nor/spi-nor.c
++++ b/drivers/mtd/spi-nor/spi-nor.c
+@@ -2728,11 +2728,9 @@ static const struct flash_info spi_nor_ids[] = {
+ 	{ "s25sl032p",  INFO(0x010215, 0x4d00,  64 * 1024,  64, SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ) },
+ 	{ "s25sl064p",  INFO(0x010216, 0x4d00,  64 * 1024, 128, SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ) },
+ 	{ "s25fl128s0", INFO6(0x012018, 0x4d0080, 256 * 1024, 64,
+-			SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ | USE_CLSR |
+-			SPI_NOR_HAS_LOCK) },
++			SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ | USE_CLSR) },
+ 	{ "s25fl128s1", INFO6(0x012018, 0x4d0180, 64 * 1024, 256,
+-			SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ | USE_CLSR |
+-			SPI_NOR_HAS_LOCK) },
++			SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ | USE_CLSR) },
+ 	{ "s25fl256s0", INFO(0x010219, 0x4d00, 256 * 1024, 128, USE_CLSR) },
+ 	{ "s25fl256s1", INFO(0x010219, 0x4d01,  64 * 1024, 512, SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ | USE_CLSR) },
+ 	{ "s25fl512s",  INFO6(0x010220, 0x4d0080, 256 * 1024, 256,
+-- 
+2.17.1
+

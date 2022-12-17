@@ -1,0 +1,7 @@
+/*TE0727-02-41C34*/
+the_ROM_image:
+{
+ [bootloader] <TE0727-02-41C34/boot/fsbl.elf>
+ <bitstream>
+ <elf,ps7_cortexa9_0>
+}

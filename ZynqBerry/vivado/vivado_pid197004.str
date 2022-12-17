@@ -1,0 +1,97 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 197004
+License: Customer
+
+Current time: 	Sat Dec 17 13:37:15 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 3840x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	TV
+User home directory: C:/Users/TV
+User working directory: Z:/ZynqBerry/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/TV/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/TV/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/TV/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	Z:/ZynqBerry/v_log/vivado.log
+Vivado journal file location: 	Z:/ZynqBerry/v_log/vivado.jou
+Engine tmp dir: 	Z:/ZynqBerry/vivado/.Xil/Vivado-197004-ASUS
+
+Xilinx Environment Variables
+----------------------------
+SDK_AVAILABLE: 1
+USE_XILINX_BOARD_STORE: 0
+VITIS_XSETTINGS: C:/Xilinx\Vitis\2020.1\settings64.bat
+VITIS_XSETTINGS_ISDONE: 1
+VIVADO_AVAILABLE: 1
+VIVADO_VERSION: 2020.1
+VIVADO_XSETTINGS: C:/Xilinx\Vivado\2020.1\settings64.bat
+VIVADO_XSETTINGS_ISDONE: 1
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:\Xilinx\Vitis\2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	386 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,297 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 84 MB (+85888kb) [00:00:05]
+// [Engine Memory]: 1,063 MB (+962673kb) [00:00:05]
+// [GUI Memory]: 90 MB (+1324kb) [00:00:05]
+// [GUI Memory]: 107 MB (+13243kb) [00:00:06]
+// [GUI Memory]: 115 MB (+3279kb) [00:00:06]
+// [GUI Memory]: 121 MB (+214kb) [00:00:07]
+// [GUI Memory]: 128 MB (+426kb) [00:00:07]
+// TclEventType: START_PROGRESS_DIALOG
+// [GUI Memory]: 139 MB (+5073kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2137 ms.
+// [Engine Memory]: 1,207 MB (+96027kb) [00:00:10]
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// bz (cs):  Sourcing Tcl script '../scripts/script_main.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: [TE_INIT-139] Run project finished without Error.    ------ 
+// Tcl Message: ----------------------------------------------------------------------- 
+dismissDialog("Sourcing Tcl script '../scripts/script_main.tcl'"); // bz (cs)
+// [Engine Memory]: 1,296 MB (+29837kb) [00:00:11]

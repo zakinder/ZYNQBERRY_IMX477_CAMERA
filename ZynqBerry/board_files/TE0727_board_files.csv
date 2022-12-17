@@ -1,0 +1,5 @@
+CSV_VERSION=1.4
+#Comment:-do not change matrix position or remove CSV_VERSION:
+ID  ,PRODID           ,PARTNAME           ,BOARDNAME                        ,SHORTNAME    ,ZYNQFLASHTYP     ,FPGAFLASHTYP                           ,PCB_REV      ,DDR_SIZE ,FLASH_SIZE ,EMMC_SIZE ,OTHERS  ,NOTES                                      ,DESIGN
+1   ,TE0727-01-010-1C ,xc7z010clg225-1    ,trenz.biz:te0727_10_1c:part0:1.0 ,10_512MB     ,qspi-x4-single   ,s25fl128s-3.3v-qspi-x4-single|SPIx4|16 ,REV01        ,512MB    ,16MB       ,NA        ,NA      ,"SW Design changes for I2C are necessary"  ,TE0727
+2   ,TE0727-02-41C34  ,xc7z010clg225-1    ,trenz.biz:te0727_10_1c:part0:1.0 ,10_512MB     ,qspi-x4-single   ,s25fl128s-3.3v-qspi-x4-single|SPIx4|16 ,REV02        ,512MB    ,16MB       ,NA        ,NA      ,                                           ,TE0727|DEMO

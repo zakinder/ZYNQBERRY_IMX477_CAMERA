@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]Z:\ZynqBerry\workspace\sdk\TE0727-02-41C34\export\TE0727-02-41C34\sw\TE0727-02-41C34\boot\fsbl.elf
+	Z:\ZynqBerry\workspace\sdk\MIPI\_ide\bitstream\design_1_wrapper.bit
+	Z:/ZynqBerry/workspace/sdk/MIPI/Debug/MIPI.elf
+}

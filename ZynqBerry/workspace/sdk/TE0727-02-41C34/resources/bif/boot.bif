@@ -1,0 +1,9 @@
+/* linux */
+/*auto-generated on 2022/12/17 13:15:37 */
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+  [bootloader]<fsbl.elf>
+  <bitstream>
+  <u-boot.elf>
+}

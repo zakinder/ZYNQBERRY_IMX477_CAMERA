@@ -1,0 +1,14 @@
+Creation Date:      2022-12-17 12:50:51
+TE::ID:             2           
+TE::PRODID:         TE0727-02-41C34       
+TE::PARTNAME:       xc7z010clg225-1     
+TE::BOARDPART:      trenz.biz:te0727_10_1c:part0:1.0    
+TE::SHORTDIR:       10_512MB     
+TE::ZYNQFLASHTYP:   qspi-x4-single 
+TE::FPGAFLASHTYP:   s25fl128s-3.3v-qspi-x4-single 
+TE::PCB_REV:        REV02      
+TE::DDR_SIZE:       512MB     
+TE::FLASH_SIZE:     16MB   
+TE::EMMC_SIZE:      NA    
+TE::OTHERS:         NA       
+TE::NOTES:                  

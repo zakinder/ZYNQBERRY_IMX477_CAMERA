@@ -1,0 +1,1733 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 17 13:15:09 2022
+# Process ID: 180828
+# Current directory: Z:/ZynqBerry/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --run_te_procedure TE::sw_run_vitis -prebuilt_xsa_only -clear --boardpart LAST_ID
+# Log file: Z:/ZynqBerry/v_log/vivado.log
+# Journal file: Z:/ZynqBerry/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --run_te_procedure
+INFO:(TE) Parameter Option Value: TE::sw_run_vitis -prebuilt_xsa_only -clear
+INFO:(TE) Parameter Index: 2
+INFO:(TE) Parameter Option: --boardpart
+INFO:(TE) Parameter Option Value: LAST_ID
+-----------------------------------------------------------------------
+INFO: [TE_INIT-81] Run TE::INIT::run_te_procedure TE::sw_run_vitis -prebuilt_xsa_only -clear LAST_ID
+INFO: [TE_INIT-182] Source Z:/ZynqBerry/settings/design_settings.tcl.
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2020.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         sdk_create_prebuilt_project_guimode
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File Z:/ZynqBerry/board_files/TE0727_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+INFO: [TE_INIT-189] Software Definition CSV version passed
+INFO: [TE_INIT-191] Software Definition CSV Version analyze domain table header
+INFO: [TE_INIT-193] Software Definition CSV Version analyze bsp table header
+INFO: [TE_INIT-22] Read ZIP ignore list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+Found ID: 2
+Board part csv name check:  All names (2) are equal on position  0.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             2 
+  TE::PRODID:         TE0727-02-41C34 
+  TE::PARTNAME:       xc7z010clg225-1 
+  TE::BOARDPART:      trenz.biz:te0727_10_1c:part0:1.0 
+  TE::SHORTDIR:       10_512MB 
+  TE::ZYNQFLASHTYP:   qspi-x4-single 
+  TE::FPGAFLASHTYP:   s25fl128s-3.3v-qspi-x4-single 
+  TE::PCB_REV:        REV02 
+  TE::DDR_SIZE:       512MB 
+  TE::FLASH_SIZE:     16MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:           
+  ------
+Start SDK
+INFO: [TE_INIT-18] Read Software list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+INFO: [TE_INIT-189] Software Definition CSV version passed
+INFO: [TE_INIT-191] Software Definition CSV Version analyze domain table header
+INFO: [TE_INIT-193] Software Definition CSV Version analyze bsp table header
+INFO: [TE_UTIL-76] Z:/ZynqBerry/workspace/sdk was deleted.
+Found Shortname: 10_512MB
+INFO: [TE_SW-2] Create workspace and compile app: 
+  Run "exec xsct Z:/ZynqBerry/scripts/script_vitis.tcl --vivrun*--id*2*--platform_only" in Z:/ZynqBerry/workspace/sdk 
+  Please Wait...this may take some minutes...Please Wait... 
+  ------
+INFO: [TE_EXT-18] Command results from VITIS "exec xsct Z:/ZynqBerry/scripts/script_vitis.tcl --vivrun*--id*2*--platform_only": 
+  Info:(TE) Parameter Index: 0
+Info:(TE) Parameter Option: --vivrun
+Info:(TE) Parameter Index: 1
+Info:(TE) Parameter Option: --id
+Info:(TE) Parameter Option Value: 2
+Info:(TE) Parameter Index: 3
+Info:(TE) Parameter Option: --platform_only
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Settings Script finished
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           ZynqBerry 
+  TE::VPROJ_PATH:           Z:/ZynqBerry/vivado 
+  TE::VLABPROJ_PATH:        Z:/ZynqBerry/vivado_lab 
+  TE::BOARDDEF_PATH:        Z:/ZynqBerry/board_files 
+  TE::FIRMWARE_PATH:        Z:/ZynqBerry/firmware 
+  TE::IP_PATH:              Z:/ZynqBerry/ip_lib 
+  TE::BD_PATH:              Z:/ZynqBerry/block_design 
+  TE::XDC_PATH:             Z:/ZynqBerry/constraints 
+  TE::HDL_PATH:             Z:/ZynqBerry/hdl 
+  TE::SET_PATH:             Z:/ZynqBerry/settings 
+  TE::PETALINUX_PATH:				Z:/ZynqBerry/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   Z:/ZynqBerry/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   Z:/ZynqBerry/workspace/sdk 
+  TE::LIB_PATH:             Z:/ZynqBerry/sw_lib 
+  TE::SCRIPT_PATH:          Z:/ZynqBerry/scripts 
+  TE::DOC_PATH:             Z:/ZynqBerry/doc 
+  TE::PREBUILT_BI_PATH:     Z:/ZynqBerry/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     Z:/ZynqBerry/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     Z:/ZynqBerry/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     Z:/ZynqBerry/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: Z:/ZynqBerry/../export 
+  TE::LOG_PATH:             Z:/ZynqBerry/v_log 
+  TE::BACKUP_PATH:          Z:/ZynqBerry/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             Z:/ZynqBerry/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           Z:/ZynqBerry/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          Z:/ZynqBerry/misc/sd 
+  TE::TMP_PATH:             Z:/ZynqBerry/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File Z:/ZynqBerry/board_files/TE0727_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: Z:/ZynqBerry/sw_lib/apps_list.csv).
+INFO: [TE_INIT-189] Software Definition CSV version passed
+INFO: [TE_INIT-191] Software Definition CSV Version analyze domain table header
+INFO: [TE_INIT-193] Software Definition CSV Version analyze bsp table header
+Found ID: 2
+Board part csv name check:  2 is unique on position 0.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             2 
+  TE::PRODID:         TE0727-02-41C34 
+  TE::PARTNAME:       xc7z010clg225-1 
+  TE::BOARDPART:      trenz.biz:te0727_10_1c:part0:1.0 
+  TE::SHORTDIR:       10_512MB 
+  TE::ZYNQFLASHTYP:   qspi-x4-single 
+  TE::FPGAFLASHTYP:   s25fl128s-3.3v-qspi-x4-single 
+  TE::PCB_REV:        REV02 
+  TE::DDR_SIZE:       512MB 
+  TE::FLASH_SIZE:     16MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:           
+  ------
+INFO: (TE): Z:/ZynqBerry/workspace/sdk is used as workspace
+INFO: (TE): See also UG1400-Vitis Embedded Software Development
+Info:(TE) Set  system type...
+Info:(TE) Create workspace...
+Starting vitis.bat. This could take few seconds...done
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vitis/2020.1/data\embeddedsw) loading 1 seconds
+Info:(TE) Create platform...
+Opening the hardware design, this may take few seconds.
+Loading the sw platform from Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/platform.spr
+Reading the platform  : "TE0727-02-41C34"
+Info:(TE) Create platform domains...
+Cleaning the zynq_fsbl application.
+rm -rf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o  te_fsbl_hooks_te0727demo1.o
+  te_fsbl_hooks.o  pcap.o  fsbl_handoff.o zynq_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a executable.elf *.o
+
+Info:(TE) Modify BSP...
+Info:(TE) Generate platform...
+Building the zynq_fsbl application.
+make -C zynq_fsbl_bsp
+
+make[1]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp'
+
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdma_v
+6_7/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdma_v6
+_7/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresight
+ps_dcc_v1_7/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+s_dcc_v1_7/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_corte
+xa9_v2_9/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+a9_v2_9/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/
+src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/s
+rc'
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_
+1/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_1
+/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3
+_6/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+6/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_
+6/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_6
+/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops_v3
+_7/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_
+7/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_v3_
+11/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_v3_1
+1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss
+_v1_3/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss_
+v1_3/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips_v3
+_7/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips_v3_
+7/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4
+_2/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+2/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_
+v2_2/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+2_2/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2
+_2/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+2/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v3_9
+/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v3_9/
+src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalon
+e_v7_2/src'
+
+make[3]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalon
+e_v7_2/src/profile'
+
+make[3]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+_v7_2/src/profile'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+_v7_2/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_
+11/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_1
+1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3
+_9/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+9/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_
+5/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_5
+/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/
+src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/s
+rc'
+
+"Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/wdtps_v3_
+3/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/wdtps_v3_3
+/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2
+_4/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+4/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4
+_3/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+3/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1
+_6/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+6/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdma_v
+6_7/src'
+
+"Compiling axivdma"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdma_v6
+_7/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresight
+ps_dcc_v1_7/src'
+
+"Compiling coresightps_dcc"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+s_dcc_v1_7/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_corte
+xa9_v2_9/src'
+
+"Compiling cpu_cortexa9"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+a9_v2_9/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/
+src'
+
+"Compiling csi"
+
+make[3]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/
+src'
+
+make[3]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/s
+rc'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/csi_v1_4/s
+rc'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_
+1/src'
+
+"Compiling ddrps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_1
+/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3
+_6/src'
+
+"Compiling devcfg"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+6/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_
+6/src'
+
+"Compiling dmaps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_6
+/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops_v3
+_7/src'
+
+"Compiling gpiops"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_
+7/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_v3_
+11/src'
+
+"Compiling iicps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_v3_1
+1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss
+_v1_3/src'
+
+"Compiling mipicsiss"
+
+make[3]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss
+_v1_3/src'
+
+make[3]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss_
+v1_3/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/mipicsiss_
+v1_3/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips_v3
+_7/src'
+
+"Compiling qspips"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips_v3_
+7/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4
+_2/src'
+
+"Compiling scugic"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+2/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_
+v2_2/src'
+
+"Compiling scutimer"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+2_2/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2
+_2/src'
+
+"Compiling scuwdt"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+2/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v3_9
+/src'
+
+"Compiling sdps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v3_9/
+src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalon
+e_v7_2/src'
+
+"Compiling standalone"
+
+make[3]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalon
+e_v7_2/src/profile'
+
+make[3]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+_v7_2/src/profile'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+_v7_2/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_
+11/src'
+
+"Compiling ttcps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_1
+1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3
+_9/src'
+
+"Compiling uartps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+9/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_
+5/src'
+
+"Compiling usbps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_5
+/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/
+src'
+
+"Compiling video timing controller"
+
+make[3]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/
+src'
+
+make[3]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/s
+rc'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8_2/s
+rc'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/wdtps_v3_
+3/src'
+
+"Compiling wdtps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/wdtps_v3_3
+/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2
+_4/src'
+
+"Compiling xadcps"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+4/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4
+_3/src'
+
+"Compiling XilFFs Library"
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+3/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1
+_6/src'
+
+make[2]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+6/src'
+
+'Finished building libraries'
+
+make[1]: Leaving directory 'Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/zynq_fsbl/zynq_fsbl_bsp'
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c sd.c -o sd.o -Izynq_fsbl_bsp/p
+s7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c nand.c -o nand.o -Izynq_fsbl_b
+sp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c nor.c -o nor.o -Izynq_fsbl_bsp
+/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c image_mover.c -o image_mover.o
+ -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c md5.c -o md5.o -Izynq_fsbl_bsp
+/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c fsbl_hooks.c -o fsbl_hooks.o -
+Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c main.c -o main.o -Izynq_fsbl_b
+sp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c rsa.c -o rsa.o -Izynq_fsbl_bsp
+/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c qspi.c -o qspi.o -Izynq_fsbl_b
+sp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c ps7_init.c -o ps7_init.o -Izyn
+q_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c te_fsbl_hooks_te0727demo1.c -o
+ te_fsbl_hooks_te0727demo1.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c te_fsbl_hooks.c -o te_fsbl_hoo
+ks.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c pcap.c -o pcap.o -Izynq_fsbl_b
+sp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -Da9-0  -O2 -c -c fsbl_handoff.S -o fsbl_handoff
+.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
+  te_fsbl_hooks_te0727demo1.o  te_fsbl_hooks.o  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard  -Da9-0  -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,
+-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-grou
+p                                         -Wl,--gc-sections -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Compiling axivdma"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Compiling coresightps_dcc"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Compiling cpu_cortexa9"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+"Compiling csi"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling ddrps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling devcfg"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling dmaps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling gpiops"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling iicps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Compiling mipicsiss"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling qspips"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scugic"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Compiling scutimer"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scuwdt"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+"Compiling sdps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Compiling standalone"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling ttcps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling uartps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling usbps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+"Compiling video timing controller"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling wdtps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling xadcps"
+
+'Finished building libraries'
+
+Building the BSP Library for domain  - flash_fsbl on processor ps7_cortexa9_0
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_7/src"
+
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Compiling axivdma"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Compiling coresightps_dcc"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Compiling cpu_cortexa9"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/csi_v1_4/src"
+
+make -C ps7_cortexa9_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+"Compiling csi"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling ddrps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling devcfg"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling dmaps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling gpiops"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling iicps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src"
+
+make -C ps7_cortexa9_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Compiling mipicsiss"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling qspips"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scugic"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Compiling scutimer"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scuwdt"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+"Compiling sdps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Compiling standalone"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_11/src"
+
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling ttcps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling uartps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling usbps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_2/src"
+
+make -C ps7_cortexa9_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+es -g -Wall -Wextra"
+
+"Compiling video timing controller"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_3/src"
+
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling wdtps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling xadcps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling XilFFs Library"
+
+'Finished building libraries'
+
+Info:(TE) finished...
+--------------------------------------------------
+--------------------------------------------------
+INFO:(TE) Script VITIS general generation passed (0)
+--------------------------------------------------
+INFO:(TE) Script CSV generation passed (0)
+--------------------------------------------------
+TE_MESSAGE_PASSED
+Info: Load VITIS scripts finished
+rm: cannot lstat `*.o': Invalid argument
+make: *** [Makefile:42: clean] Error 1
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+In file included from usleep.c:34:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xil_sleeptimer.c:32:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xtime_l.c:27:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from sleep.c:31:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+In file included from main.c:115:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+te_fsbl_hooks_te0727demo1.c: In function 'TE_FsblHookBeforeHandoff_Custom':
+te_fsbl_hooks_te0727demo1.c:272:19: error: 'XPAR_VIDEO_OUT_AXI_VDMA_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_VDMA_0_DEVICE_ID'?
+  272 |     vdma_out_init(XPAR_VIDEO_OUT_AXI_VDMA_0_DEVICE_ID, HDMI_FB_ADDR, 1280, 720, 4);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   XPAR_AXI_VDMA_0_DEVICE_ID
+te_fsbl_hooks_te0727demo1.c:272:19: note: each undeclared identifier is reported only once for each function it appears in
+te_fsbl_hooks_te0727demo1.c:275:18: error: 'XPAR_VIDEO_IN_AXI_VDMA_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_VDMA_0_DEVICE_ID'?
+  275 |     vdma_in_init(XPAR_VIDEO_IN_AXI_VDMA_0_DEVICE_ID, CAMERA_FB_ADDR, 1280, 720, 4);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                  XPAR_AXI_VDMA_0_DEVICE_ID
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+In file included from pcap.c:78:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+<command-line>: warning: missing whitespace after the macro name
+arm-xilinx-eabi-gcc.exe: error: te_fsbl_hooks_te0727demo1.o: No such file or directory
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+In file included from usleep.c:34:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xil_sleeptimer.c:32:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xtime_l.c:27:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from sleep.c:31:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+In file included from usleep.c:34:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xil_sleeptimer.c:32:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from xtime_l.c:27:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from sleep.c:31:
+xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~ 
+  ------  
+   TE XSCT LOG only:  
+ 
+ Info:(TE) Parameter Index: 0 
+ Info:(TE) Parameter Option: --vivrun 
+ Info:(TE) Parameter Index: 1 
+ Info:(TE) Parameter Option: --id 
+ Info:(TE) Parameter Option Value: 2 
+ Info:(TE) Parameter Index: 3 
+ Info:(TE) Parameter Option: --platform_only 
+ INFO:(TE) Load Utilities script finished 
+ INFO:(TE) Load Vivado script finished 
+ INFO:(TE) Load Settings Script finished 
+ INFO: (TE): Z:/ZynqBerry/workspace/sdk is used as workspace 
+ INFO: (TE): See also UG1400-Vitis Embedded Software Development 
+ Info:(TE) Set  system type... 
+ Info:(TE) Create workspace... 
+ Info:(TE) Create platform... 
+ Info:(TE) Create platform domains... 
+ Info:(TE) Modify BSP... 
+ Info:(TE) Generate platform... 
+ Info:(TE) finished... 
+ INFO:(TE) Script VITIS general generation passed (0) 
+ INFO:(TE) Script CSV generation passed (0) 
+  ------
+ Copy Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/export/TE0727-02-41C34/sw/TE0727-02-41C34/boot/fsbl.elf
+ Skip Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/export/TE0727-02-41C34/sw/TE0727-02-41C34/boot/u-boot.elf
+ Skip Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/resources/boot/fsbl.elf
+ Skip Z:/ZynqBerry/workspace/sdk/TE0727-02-41C34/resources/boot/u-boot.elf
+INFO: [TE_SW-53] Boot.bif and Boot.bin only for Zynq-FPGAs available. <app>.bit and <app>.mcs only for MicroBlaze available. System will be checked with block design name, current BD file name is NA .Use:
+   "zsys_bd.tcl" for Systems with Zynq 
+   "zusys_bd.tcl" for Systems with UltraScale Zynq
+   "msys_bd.tcl" for Systems with MicroBlaze
+   "fsys_bd.tcl" for Systems with FPGA-Fabric design only
+ 
+INFO: [TE_SW-80] Xilinx Device Tree git clone path (B:/xilinx_git/device-tree-xlnx) doesn't exist.
+INFO: [TE_SW-78] Start VITIS: 
+  Run "exec vitis -workspace Z:/ZynqBerry/workspace/sdk -lp Z:/ZynqBerry/sw_lib" in Z:/ZynqBerry/workspace/sdk 
+  Please Wait..and close Welcome tab when Vitis is opened 
+  ------
+INFO: [TE_EXT-18] Command results from VITIS "exec vitis -workspace Z:/ZynqBerry/workspace/sdk -lp Z:/ZynqBerry/sw_lib": 
+  
+****** Xilinx Vitis Development Environment
+Vitis v2020.1 (64-bit)
+****** SW Build 2902540 on Wed May 27 19:55:32 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+Launching Vitis with command C:\Xilinx\Vitis\2020.1\eclipse\win64.o\eclipse.exe -data Z:/ZynqBerry/workspace/sdk -vmargs -Dcom.xilinx.sdk.args.swrepos=Z:/ZynqBerry/sw_lib -Xms64m -Xmx4G -Dosgi.configuration.area=@user.home/.Xilinx/Vitis/2020.1 --add-modules=ALL-SYSTEM --add-modules=jdk.incubator.httpclient --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED &  
+  ------
+  Close Welcome tab in Vitis to see the project 
+  ------
+Vitis finished.
+-----------------------------------------------------------------------
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 13:16:57 2022...

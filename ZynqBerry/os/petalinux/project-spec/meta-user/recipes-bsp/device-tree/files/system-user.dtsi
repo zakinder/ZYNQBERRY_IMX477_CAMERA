@@ -1,0 +1,149 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+  
+  
+/ {
+    #address-cells = <1>;
+    #size-cells = <1>;
+   
+    reserved-memory {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges;
+        // HDMI Output frame buffer
+        hdmi_fb_reserved_region@1FC00000 {
+            compatible = "removed-dma-pool";
+            no-map;
+            // 512M (M modules)
+            reg = <0x1FC00000 0x400000>;
+            // 128M (R modules)
+            //reg = <0x7C00000 0x400000>;
+        };
+/*  // Use second frame buffer if you want separate area for camera image  
+        camera_fb_reserved_region@1FC00000 {
+            compatible = "removed-dma-pool";
+            no-map;
+            // 512M (M modules)
+            reg = <0x1FC00000 0x400000>;
+            // 128M (R modules)
+            //reg = <0x7800000 0x400000>;
+        };
+*/ 
+    };
+   
+    hdmi_fb: framebuffer@0x1FC00000 {           // HDMI out
+        compatible = "simple-framebuffer";
+        // 512M (M modules)
+        reg = <0x1FC00000 (1280 * 720 * 4)>;    // 720p
+        // 128M (R modules)
+        //reg = <0x7C00000 (1280 * 720 * 4)>;   // 720p
+        width = <1280>;                         // 720p
+        height = <720>;                         // 720p
+        stride = <(1280 * 4)>;                  // 720p
+        format = "a8b8g8r8";
+        status = "okay";
+    };
+/*  // In "go through" mode only one framebuffer is used
+    camera_fb: framebuffer@0x1FC00000 {         // CAMERA in
+        compatible = "simple-framebuffer";
+        // 512M (M modules)
+        reg = <0x1FC00000 (1280 * 720 * 4)>;    // 720p
+        // 128M (R modules)
+        //reg = <0x7800000 (1280 * 720 * 4)>;   // 720p
+        width = <1280>;                         // 720p
+        height = <720>;                         // 720p
+        stride = <(1280 * 4)>;                  // 720p
+        format = "a8b8g8r8";
+    };
+*/ 
+    vcc_3V3: fixedregulator@0 {
+        compatible = "regulator-fixed";
+        regulator-name = "vccaux-supply";
+        regulator-min-microvolt = <3300000>;
+        regulator-max-microvolt = <3300000>;
+        regulator-always-on;
+    };
+};
+
+  
+&qspi {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "okay";
+    flash0: flash@0 {
+        compatible = "jedec,spi-nor";
+        reg = <0x0>;
+        #address-cells = <1>;
+        #size-cells = <1>;
+    };
+};
+  
+/*
+* We need to disable Linux VDMA driver as VDMA
+* already configured in FSBL
+*/
+
+
+&video_out_axi_vdma_0 {
+	// Solution 1: Disable standard VDMA driver (VDMA configuration should be done in the FSBL)
+	status = "disabled";	
+	// Solution 2: Configure VDMA using the custom driver (VDMA configuration in FSBL should be disabled)
+    //compatible = "trenz,vdmafb";
+    //width = <1280>;
+    //height = <720>;
+    //stride = <(1280 * 4)>;
+    //format = "a8b8g8r8";
+};
+
+&video_in_axi_vdma_0 {
+	// Solution 1: Disable satandard VDMA driver (VDMA configuration should be done in the FSBL)
+	status = "disabled";
+};
+
+&gpio0 {
+    interrupt-controller;
+    #interrupt-cells = <2>;
+};
+  
+
+/* I2C1 - for REV02 */ 
+&i2c1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	i2cmux: i2cmux@70  {
+		compatible = "nxp,pca9540";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x70>;
+
+		ID_I2C@0 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <0>;
+		};
+		CSI_I2C@1 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <1>;
+		};
+	};
+};
+
+
+
+/* USB */  
+/{
+    usb_phy0: usb_phy@0 {
+        compatible = "ulpi-phy";
+        #phy-cells = <0>;
+        reg = <0xe0002000 0x1000>;
+        view-port = <0x0170>;
+        drv-vbus;
+    };
+};
+  
+&usb0 {
+    usb-phy = <&usb_phy0>;
+} ;
